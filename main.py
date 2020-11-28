@@ -52,7 +52,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.repaint()  # перерисовываем
 
     def draw(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0,255),random.randint(0,255),random.randint(0,255)))
         h = random.randint(0, 580)  # ширина и высота
         x = random.randint(0, 580)  # расположение по х
         y = random.randint(0, 580)  # расположение по у
